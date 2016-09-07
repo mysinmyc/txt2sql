@@ -43,7 +43,7 @@ func (self *Parser) ParseLine(pLine string) ([]Field, error) {
 		}
 			
 		if self.stringQualifier!="" && strings.HasSuffix(vCurField,self.stringQualifier) {
-			vCurField=vCurField[0:len(vCurField)-1-len(self.stringQualifier)]
+			vCurField=vCurField[0:len(vCurField)-len(self.stringQualifier)]
 		}
 		vRis[vCnt] = Field { value: vCurField , valueType:TYPE_VARCHAR } 
 	}
