@@ -48,3 +48,8 @@ Usage of ./txt2sql:
 
 At the moment this no more than an exercise and an execuse to write in golang language. No tests have been performed
 
+
+
+# External dependencies
+
+some components depends on [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3), and I thanks him for his job. Before using it please check  lincese compatibility for your use cases
